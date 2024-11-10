@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlocService } from './bloc.service';
-import { Bloc } from './bloc';
+
 
 @Component({
   selector: 'app-root',
