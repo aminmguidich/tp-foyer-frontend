@@ -24,4 +24,4 @@ FROM nginx:1.17.1-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copie les fichiers construits d'Angular vers le dossier Nginx
-COPY --from=build /usr/src/app/dist/tpfoyer-front /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/tp-foyer-front /usr/share/nginx/html
