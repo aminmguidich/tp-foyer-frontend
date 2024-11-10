@@ -2,8 +2,6 @@
   <div class="col-md-11" style="margin-left: 20px">
     <h3 style="margin-top: 20px">List of Blocs</h3>
     <hr>
-    <button class="btn btn-round btn-sm btn-success" (click)="open(mymodal1, null)">Add new Bloc</button>
-    <br><br>
     <table class="table table-hover">
       <thead>
         <tr>
@@ -22,41 +20,3 @@
     </table>
   </div>
 </div>
-
-<ng-template #mymodal1 let-modal1>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Add new Bloc</h4>
-    <button type="button" class="btn-close" aria-label="Close" (click)="modal1.dismiss('Cross click')"></button>
-  </div>
-  <div class="modal-body">
-    <form>
-      <div class="mb-3">
-        <label for="bloc-idBloc">ID Bloc</label>
-        <div class="input-group">
-          <input id="bloc-idBloc" class="form-control" type="number" placeholder="ID of the bloc"
-                 [(ngModel)]="bloc.idBloc" [ngModelOptions]="{standalone: true}">
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="bloc-nomBloc">Nom Bloc</label>
-        <div class="input-group">
-          <input id="bloc-nomBloc" class="form-control" type="text" placeholder="Name of the bloc"
-                 [(ngModel)]="bloc.nomBloc" [ngModelOptions]="{standalone: true}">
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="bloc-capaciteBloc">Capacité Bloc</label>
-        <div class="input-group">
-          <input id="bloc-capaciteBloc" class="form-control" type="number" placeholder="Capacity of the bloc"
-                 [(ngModel)]="bloc.capaciteBloc" [ngModelOptions]="{standalone: true}">
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-success" (click)="addbloc(bloc)" (click)="modal1.close('Save click')">
-      Ajouter le Bloc
-    </button>
-    <button type="button" class="btn btn-danger" (click)="modal1.close('Save click')">Annuler</button>
-  </div>
-</ng-template>

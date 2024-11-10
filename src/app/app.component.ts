@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BlocService } from './bloc.service';
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Bloc } from './bloc';
 
 @Component({
@@ -16,7 +15,7 @@ export class AppComponent implements OnInit {
   listblocs: any;
   bloc!:any;
 
-  constructor(private etudiantService: BlocService, private modalService: NgbModal ) { }
+  constructor(private etudiantService: BlocService ) { }
 
   ngOnInit(): void {
     this.getAllbloc();
@@ -41,29 +40,5 @@ export class AppComponent implements OnInit {
     });
   }
 
-  open(content: any, action: any) {
-    if (action != null)
-      this.bloc = action
-    else
-      this.bloc = new Bloc();
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
-  }
 
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return `with: ${reason}`;
-    }
-  }
-
-  cancel() {
-    this.form = false;
-  }
 }
