@@ -1,0 +1,104 @@
+/* General styles for the container */
+.row {
+    margin: 20px;
+  }
+  
+  h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Table styles */
+  .table-hover {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-hover th,
+  .table-hover td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-hover th {
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button styles */
+  button.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  button.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  button.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Form styles */
+  form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Add some margin to the bottom of the page */
+  body {
+    margin-bottom: 50px;
+  }
+  

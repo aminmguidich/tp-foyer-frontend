@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class BlocService {
 
  
-  readonly API_URL = 'http://172.20.10.2:8082/tpFoyer17/api/bloc';
+  readonly API_URL = 'http://localhost:8082/tpFoyer17/api/blocs';
 
   constructor(private httpClient: HttpClient) { }
   getAllbloc() {
