@@ -14,6 +14,7 @@ export class BlocService {
   getAllbloc() {
     return this.httpClient.get(`${this.API_URL}/retrieveBlocs`)
   }
+  //add method
   addbloc(bloc : any) {
     return this.httpClient.post(`${this.API_URL}/addBloc`, bloc)
   }
